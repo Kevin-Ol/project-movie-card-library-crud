@@ -33,7 +33,7 @@ header > .add-button {
   text-decoration: none;
 }
 
-.edit-button{
+.edit-button, .submit-button{
   background-color: green;
   border-radius: 8px;
   color: white;

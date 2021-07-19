@@ -39,7 +39,7 @@ class MovieDetails extends Component {
 
     return (
       <div data-testid="movie-details" className="movie-details">
-        <img alt="Movie Cover" src={ imagePath } />
+        <img alt="Movie Cover" src={ imagePath.startsWith('.') ? `.${imagePath}` : imagePath} />
         <p><strong>Title:</strong> { title }</p>
         <p><strong>Subtitle:</strong> { subtitle }</p>
         <p><strong>Storyline:</strong> { storyline }</p>

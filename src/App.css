@@ -1,0 +1,122 @@
+body {
+  background-color: #292929;
+  box-sizing: border-box;
+  color: white;
+}
+
+header {
+  align-items: center;
+  background-color: black;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-bottom: 16px;
+}
+
+header .title {
+  color: #231fff;
+  margin: 8px auto;
+  text-align: center;
+  text-decoration: none;
+}
+
+header > .add-button {
+  margin-right: 16px
+}
+
+.delete-button{
+  background-color: red;
+  border-radius: 8px;
+  color: white;
+  padding: 8px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.edit-button{
+  background-color: green;
+  border-radius: 8px;
+  color: white;
+  padding: 8px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.return-button, .add-button{
+  background-color: blue;
+  border-radius: 8px;
+  color: white;
+  padding: 8px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.movie-details, .movie-edit{
+  background-color: #cbcdcb;
+  border: 1px solid gray;
+  border-radius: 8px;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  max-width: 500px;
+  padding: 16px;
+}
+
+.movie-edit form div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: center;
+  margin: 8px auto;
+}
+
+.movie-edit form > div > label {
+  display: inline-block;
+  text-align: right;
+  width: 70px;
+}
+
+.movie-edit form > div > textarea {
+  resize: none;
+}
+
+.movie-list{
+  align-content: space-between;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 15px;
+}
+
+.movie-card {
+  background-color: #cbcdcb;
+  border: 1px solid gray;
+  border-radius: 8px;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  margin: 8px 0;
+  max-width: 250px;
+  padding: 16px;
+}
+
+.movie-card:hover {
+  transform: scale(1.1);
+  transition: 0.3s;
+}
+
+.movie-card p {
+  border-radius: 8px;
+  box-shadow: 2px 2px 2px 3px #00000080;
+  font-size: 16px;
+  line-height: 1.5;
+  padding: 8px;
+  text-align: justify;
+}
